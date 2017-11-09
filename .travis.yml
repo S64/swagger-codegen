@@ -30,9 +30,9 @@ cache:
 #  - docker
 
 # comment out the host table change to use the public petstore server
-addons:
-  hosts:
-    - petstore.swagger.io
+#addons:
+#  hosts:
+#    - petstore.swagger.io
 
 before_install:
   - export SW=`pwd`
@@ -58,10 +58,10 @@ before_install:
   - export PATH=$HOME/.local/bin:$PATH
   - travis_retry curl --insecure -L https://www.stackage.org/stack/osx-x86_64 | tar xz --strip-components=1 --include '*/stack' -C ~/.local/bin
   # start local petstore server
-  - git clone -b docker --single-branch https://github.com/wing328/swagger-samples
-  - cd swagger-samples/java/java-jersey-jaxrs
-  - sudo mvn jetty:run &
-  - cd $SW
+  #- git clone -b docker --single-branch https://github.com/wing328/swagger-samples
+  #- cd swagger-samples/java/java-jersey-jaxrs
+  #- sudo mvn jetty:run &
+  #- cd $SW
   # NOTE: iOS build not support docker at the moment
   # to run petstore server locally via docker
   #- docker pull swaggerapi/petstore
