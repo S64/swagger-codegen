@@ -57,6 +57,8 @@ before_install:
   - cat /etc/hosts
   # show java version
   - java -version
+  - node -v
+  - tsc -v
 
 install:
   # Add Godeps dependencies to GOPATH and PATH
