@@ -70,6 +70,9 @@ before_install:
   - go version
   # show stack version
   - stack --version
+  - npm -v
+  - node -v
+  - tsc -v
 
 install:
   # Add Godeps dependencies to GOPATH and PATH
