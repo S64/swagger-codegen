@@ -32,6 +32,7 @@ open class User: Codable {
     }
 
 
+    
     public init(id: Int64?, username: String?, firstName: String?, lastName: String?, email: String?, password: String?, phone: String?, userStatus: Int?) {
         self.id = id
         self.username = username
@@ -42,6 +43,7 @@ open class User: Codable {
         self.phone = phone
         self.userStatus = userStatus
     }
+    
 
     // Encodable protocol methods
 

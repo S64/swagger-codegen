@@ -19,9 +19,11 @@ open class NumberOnly: Codable {
     }
 
 
+    
     public init(justNumber: Double?) {
         self.justNumber = justNumber
     }
+    
 
     // Encodable protocol methods
 

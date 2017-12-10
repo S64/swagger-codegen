@@ -19,9 +19,11 @@ open class SpecialModelName: Codable {
     }
 
 
+    
     public init(specialPropertyName: Int64?) {
         self.specialPropertyName = specialPropertyName
     }
+    
 
     // Encodable protocol methods
 

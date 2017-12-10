@@ -56,6 +56,7 @@ open class FormatTest: Codable {
     public var password: String
 
 
+    
     public init(integer: Int?, int32: Int?, int64: Int64?, number: Double, float: Float?, double: Double?, string: String?, byte: Data, binary: Data?, date: Date, dateTime: Date?, uuid: UUID?, password: String) {
         self.integer = integer
         self.int32 = int32
@@ -71,6 +72,7 @@ open class FormatTest: Codable {
         self.uuid = uuid
         self.password = password
     }
+    
 
     // Encodable protocol methods
 
